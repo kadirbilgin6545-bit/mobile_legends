@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haberler</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="icon" type="image/png" href="img/fawicon.png">
+</head>
+
+<body>
+
+<div id="anadiv">
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="ana_sayfa.html">Ana Sayfa</a></li>
+            <li><a href="hakkinda.html">Hakkında</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="haberler.html">Haberler</a></li>
+            <li><a href="duzenlemeler.html">Düzenlemeler</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ABOUT -->
+<section class="news-container">
+
+    <!-- BREAKING -->
+    <div class="breaking">
+        🔴 BREAKING: Yeni Patch 1.8.90 yayınlandı!
+    </div>
+
+    <!-- FEATURED SLIDER -->
+    <div class="slider">
+
+        <div class="slide active">
+            <img src="img/epickadita.png">
+            <div class="caption">
+                <span class="tag skin">SKIN</span>
+                <h2>Legend Kadita Kostümü Geldi</h2>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="img/batllepas.png">
+            <div class="caption">
+                <span class="tag pass">PASS</span>
+                <h2>Sezon 30 Battle Pass Aktif</h2>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="img/newmeta.png">
+            <div class="caption">
+                <span class="tag meta">META</span>
+                <h2>Yeni Meta Açıklandı</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SIDE NEWS -->
+    <div class="side-news">
+
+        <div class="card">
+            <img src="img/Angela.png">
+            <div>
+                <span class="tag event">EVENT</span>
+                <h4>Diamond İndirim Etkinliği</h4>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="img/freddrin.png">
+            <div>
+               <span class="tag meta">META</span>
+                <h4>Fredrinn S Tier’a Yükseldi</h4>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- FOOTER (ARTIK DIŞARIDA!) -->
+<footer>
+    <div class="footer-content">
+        <h3>Mobile Legends Rehber</h3>
+        <p>En iyi buildler, stratejiler ve güncel meta bilgileri.</p>
+
+        <div class="footer-links">
+            <a href="ana_sayfa.html">Ana Sayfa</a>
+            <a href="hakkinda.html">Hakkında</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="haberler.html">Haberler</a>
+            <a href="duzenlemeler.html">Düzenlemeler</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Tüm hakları saklıdır.</p>
+    </div>
+</footer>
+
+</div>
+<script>
+let slides = document.querySelectorAll(".slide");
+let i = 0;
+
+setInterval(() => {
+    slides[i].classList.remove("active");
+    i = (i + 1) % slides.length;
+    slides[i].classList.add("active");
+}, 4000);
+</script>
+</body>
+</html>

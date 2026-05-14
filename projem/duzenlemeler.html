@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Düzenlemeler</title>
+    <link rel="stylesheet" href="stil.css">
+     <link rel="icon" type="image/png" href="img/fawicon.png">
+</head>
+
+<body>
+
+<div id="anadiv">
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="ana_sayfa.html">Ana Sayfa</a></li>
+                <li><a href="hakkinda.html">Hakkında</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="haberler.html">Haberler</a></li>
+                <li><a href="duzenlemeler.html">Düzenlemeler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="boxes">
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/alice.png">
+        <h3>Alice</h3>
+        <p>Can çalma artırıldı, sustain gücü yükseldi.</p>
+    </div>
+
+    <div class="box nerf">
+        <span class="tag">NERF</span>
+        <img src="img/alucard.png">
+        <h3>Alucard</h3>
+        <p>Takım savaşlarında etkisi azaldı.</p>
+    </div>
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/argus.png">
+        <h3>Argus</h3>
+        <p>Ultimate daha stabil hale getirildi.</p>
+    </div>
+
+    <div class="box nerf">
+        <span class="tag">NERF</span>
+        <img src="img/fanny.png">
+        <h3>Fanny</h3>
+        <p>Enerji yönetimi zorlaştırıldı.</p>
+    </div>
+
+    <div class="box balanced">
+        <span class="tag">BAL</span>
+        <img src="img/odette.png">
+        <h3>Odette</h3>
+        <p>Rework sonrası dengeli hale geldi.</p>
+    </div>
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/terizla.png">
+        <h3>Terizla</h3>
+        <p>Frontline gücü artırıldı.</p>
+    </div>
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/freddrin.png">
+        <h3>Fredrinn</h3>
+        <p>Sustain gücü biraz artırıldı.</p>
+    </div>
+
+    <div class="box nerf">
+        <span class="tag">NERF</span>
+        <img src="img/gusion.png">
+        <h3>Gusion</h3>
+        <p>Combo hasarı dengelendi.</p>
+    </div>
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/popol.png">
+        <h3>Popol & Kupa</h3>
+        <p>Lane kontrolü güçlendirildi.</p>
+    </div>
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/yuzhong.png">
+        <h3>Yu Zhong</h3>
+        <p>Savaş süresi artırıldı.</p>
+    </div>
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/masha.png">
+        <h3>Masha</h3>
+        <p>Split push çok güçlendi.</p>
+    </div>
+
+    <div class="box nerf">
+        <span class="tag">NERF</span>
+        <img src="img/paquito.png">
+        <h3>Paquito</h3>
+        <p>Combo zorlaştırıldı.</p>
+    </div>
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/granger.png">
+        <h3>Granger</h3>
+        <p>Mid game buff aldı.</p>
+    </div>
+
+    <div class="box buff">
+        <span class="tag">BUFF</span>
+        <img src="img/claude.png">
+        <h3>Claude</h3>
+        <p>Late game güçlendi.</p>
+    </div>
+
+    <div class="box balanced">
+        <span class="tag">BAL</span>
+        <img src="img/kadita.png">
+        <h3>Kadita</h3>
+        <p>Riskli ama yüksek hasar.</p>
+    </div>
+
+</section>
+
+
+
+    
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h3>Mobile Legends Rehber</h3>
+            <p>En iyi buildler, stratejiler ve güncel meta bilgileri.</p>
+
+            <div class="footer-links">
+                <a href="ana_sayfa.html">Ana Sayfa</a>
+            <a href="hakkinda.html">Hakkında</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="haberler.html">Haberler</a>
+            <a href="duzenlemeler.html">Düzenlemeler</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 3000);
+</script>
+
+</body>
+</html>

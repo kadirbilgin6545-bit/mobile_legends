@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="icon" type="image/png" href="img/fawicon.png">
+</head>
+
+<body>
+
+<div id="anadiv">
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="ana_sayfa.html">Ana Sayfa</a></li>
+                <li><a href="hakkinda.html">Hakkında</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="haberler.html">Haberler</a></li>
+                <li><a href="duzenlemeler.html">Düzenlemeler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SLIDER -->
+    <section class="banner">
+        <div class="slide active">
+            <img src="img/hazirbanner.jpg" alt="banner 1" >
+        </div>
+
+        <div class="slide">
+            <img src="img/hazirbanner1.jpg" alt="banner 2">
+        </div>
+
+        <div class="slide">
+            <img src="img/hazirbanner2.jpg" alt="banner 3">
+        </div>
+    </section>
+
+    <!-- BOX SECTION -->
+    <section class="boxes">
+
+        <div class="box">
+            <img src="img/aomon.png" alt="Aamon hero">
+            <h3>Hero Rehberleri</h3>
+            <p>En iyi buildlerle karakterini güçlendir.</p>
+        </div>
+
+        <div class="box">
+            <img src="img/Angela.png" alt="Angela hero">
+            <h3>Strateji</h3>
+            <p>Doğru taktiklerle rakiplerini alt et.</p>
+        </div>
+
+        <div class="box">
+            <img src="img/Nolan.png" alt="Nolan hero">
+            <h3>Güncellemeler</h3>
+            <p>Meta değişimlerini anında takip et.</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h3>Mobile Legends Rehber</h3>
+            <p>En iyi buildler, stratejiler ve güncel meta bilgileri.</p>
+
+            <div class="footer-links">
+               <a href="ana_sayfa.html">Ana Sayfa</a>
+            <a href="hakkinda.html">Hakkında</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="haberler.html">Haberler</a>
+            <a href="duzenlemeler.html">Düzenlemeler</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 3000);
+</script>
+
+</body>
+</html>
